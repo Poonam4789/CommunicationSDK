@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, OnCommunicationR
     }
 
     override fun onClick(p0: View?) {
-        GlobalScope.launch{callApi()}
+        callApi()
     }
 
     override fun onSuccess(operationId: Int, responseProcessor: ICommunicationResponseProcessor?) {
